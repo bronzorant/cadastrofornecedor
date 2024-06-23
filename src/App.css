@@ -1,38 +1,140 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121f3d; /* Fundo escuro */
+  color: #ffffff; /* Texto branco */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container, .main-container {
+  width: 80%;
+  max-width: 600px;
+  background-color: #1a3066; /* Tom de azul */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1, .form-container h1 {
   text-align: center;
+  color: #ffffff; /* Texto branco */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-container form, .form-container form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.login-container input, .form-container input, .login-container button, .form-container button {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.login-container input, .form-container input {
+  font-size: 16px;
+}
+
+.login-container button, .form-container button {
+  background-color: #3f72af; /* Azul mais escuro */
+  color: #ffffff; /* Texto branco */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-container button:hover, .form-container button:hover {
+  background-color: #6195e8; /* Azul mais claro ao passar o mouse */
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro translúcido */
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-content {
+  background-color: #1a3066; /* Tom de azul */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  width: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-content .close {
+  color: #ffffff; /* Texto branco */
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-content .close:hover {
+  color: #ff4d4d; /* Vermelho ao passar o mouse */
+}
+
+.list-container {
+  margin-top: 20px;
+}
+
+.list-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.list-container th, .list-container td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ffffff; /* Linha branca */
+}
+
+.list-container th {
+  background-color: #1a3066; /* Tom de azul */
+  color: #ffffff; /* Texto branco */
+}
+
+.list-container tr:hover {
+  background-color: #274981; /* Azul mais escuro ao passar o mouse */
+}
+.help-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #3f72af;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.help-content {
+  text-align: left;
+}
+
+.help-content h2 {
+  margin-bottom: 10px;
+}
+
+.help-content p {
+  margin-bottom: 8px;
+}
+
+.help-content ul {
+  padding-left: 20px;
+}
+
+.help-content li {
+  margin-bottom: 4px;
 }

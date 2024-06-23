@@ -1,0 +1,14 @@
+/* FornecedorList.css */
+.fornecedor-item {
+    margin-bottom: 20px; /* Espaçamento inferior entre os itens */
+    padding: 15px; /* Espaçamento interno para destacar o contorno ou fundo */
+    border: 1px solid #048581; /* Contorno leve */
+    border-radius: 5px; /* Borda arredondada */
+    background-color: #048581; /* Cor de fundo leve */
+  }
+  
+  .buttons-container {
+    margin-top: 10px; /* Espaçamento superior para separar os botões dos dados */
+  }
+  
+  
